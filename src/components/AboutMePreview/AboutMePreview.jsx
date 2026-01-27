@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutMe() {
+function AboutMePreview() {
   return (
     <div className="bg-purple-300 col-span-10 flex flex-col items-center">
       <h1 className="text-5xl text-center p-8 bg-green-300 w-full">
@@ -15,8 +15,7 @@ function AboutMe() {
           <span className="font-bold">UI/UX</span>,{" "}
           <span className="font-bold">design patterns</span>, and{" "}
           <span className="font-bold">Restful APIs</span> integration. My goal
-          is to build neat, user-friendly interfaces while maintaining a solid
-          understanding of the backend logic
+          is to build <span> <b> neat</b></span>, user-friendly interfaces
         </p>
         <br />
         <br />
@@ -58,7 +57,7 @@ function AboutMe() {
           <i className="bi bi-github me-2"></i>
           <span>
             {" "}
-            Check out my latest projects on{" "}
+            Check out my latest Projects on{" "}
             <a
               className="hover:underline text-blue-400"
               href="https://github.com/giovannifdipasquale"
@@ -89,4 +88,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default AboutMePreview;

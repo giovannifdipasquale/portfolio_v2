@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import SideBar from './components/SideBar/SideBar'
-import './App.css'
+import Home from "src/pages/Home/Home";
+import Projects from "src/pages/Projects/Projects";
+import Contacts from "src/pages/Contacts/Contacts";
+import AboutMe from "src/pages/AboutMe/AboutMe";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 function App() {
-
   return (
-    <div className="h-screen w-screen p-3 font-geologica">
-      <div className="border flex flex-col border-solid h-full w-full bg-blue-300">
-        <h1 className="font-geologica text-5xl m-8"> Giovanni Di Pasquale </h1>
-        <div className="grow grid grid-cols-12 bg-amber-400 ">
-          <SideBar />
-        </div>
-      </div>
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about_me" element={<AboutMe />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App
+export default App;

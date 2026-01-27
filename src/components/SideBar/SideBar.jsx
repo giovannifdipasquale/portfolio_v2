@@ -1,23 +1,26 @@
 import React, { useState } from "react";
-import AboutMe from "../AboutMe/AboutMe";
-import Contacts from "../Contacts/Contacts";
-import Projects from "../Projects/Projects";
+import AboutMePreview from "src/components/AboutMePreview/AboutMePreview";
+import ContactsPreview from "src/components/ContactsPreview/ContactsPreview";
+import ProjectsPreview from "src/components/ProjectsPreview/ProjectsPreview";
+import AboutMe from "src/pages/AboutMe/AboutMe";
+import Contacts from "src/pages/Contacts/Contacts";
+import Projects from "src/pages/Projects/Projects";
 function SideBar() {
   const items = [
     {
       id: "about_me",
       name: "About Me",
-      Component: AboutMe,
+      Component: AboutMePreview,
     },
     {
-      id: "projects",
+      id: "ProjectsPreview",
       name: "Projects",
-      Component: Projects,
+      Component: ProjectsPreview,
     },
     {
-      id: "contacts",
+      id: "ContactsPreview",
       name: "Contacts",
-      Component: Contacts,
+      Component: ContactsPreview,
     },
   ];
   const [selectedItems, setSelectedItems] = useState("about_me");
