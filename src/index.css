@@ -1,6 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
 @import "tailwindcss";
 @import "bootstrap-icons";
+
+/* Palette Variables */
+:root {
+  --rosy-copper: #d66853ff;
+  --smoky-rose: #7d4e57ff;
+  --jet-black: #232c33ff;
+  --jet-black-2: #323F49;
+  --white: #fcfcfcff;
+}
+
+
+/* Background Classes */
+.bg-rosy {
+  background-color: var(--rosy-copper);
+}
+
+.bg-smoky {
+  background-color: var(--smoky-rose);
+}
+
+.bg-jet {
+  background-color: var(--jet-black);
+}
+
+.bg-jet-2 {
+  background-color: var(--jet-black-2);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Text Color Classes */
+.text-rosy {
+  color: var(--rosy-copper);
+}
+
+.text-smoky {
+  color: var(--smoky-rose);
+}
+
+.text-jet {
+  color: var(--jet-black);
+}
+
+.text-jet-2 {
+  color: var(--jet-black-2);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+/* Border Classes */
+.border-rosy {
+  border-color: var(--rosy-copper);
+}
+
+.border-smoky {
+  border-color: var(--smoky-rose);
+}
+
+.border-jet {
+  border-color: var(--jet-black);
+}
+
+.border-jet-2 {
+  border-color: var(--jet-black-2);
+}
+
+.border-white {
+  border-color: var(--white);
+}
+
+/* Hover Background Classes */
+.hover-bg-rosy:hover {
+  background-color: var(--rosy-copper);
+}
+
+.hover-bg-smoky:hover {
+  background-color: var(--smoky-rose);
+}
+
+.hover-bg-jet:hover {
+  background-color: var(--jet-black);
+}
+
+.hover-bg-jet-2:hover {
+  background-color: var(--jet-black-2);
+}
+
+.hover-bg-white:hover {
+  background-color: var(--white);
+}
+
+/* Hover Text Classes */
+.hover-text-rosy:hover {
+  color: var(--rosy-copper);
+}
+
+.hover-text-smoky:hover {
+  color: var(--smoky-rose);
+}
+
+.hover-text-jet:hover {
+  color: var(--jet-black);
+}
+
+.hover-text-jet-2:hover {
+  color: var(--jet-black-2);
+}
+
+.hover-text-white:hover {
+  color: var(--white);
+}
+
+/* Shadow Classes */
+.shadow-rosy {
+  box-shadow: 0 10px 15px -3px var(--rosy-copper), 0 4px 6px -2px var(--rosy-copper);
+}
+
+.shadow-smoky {
+  box-shadow: 0 10px 15px -3px var(--smoky-rose), 0 4px 6px -2px var(--smoky-rose);
+}
+
+.shadow-jet {
+  box-shadow: 0 10px 15px -3px var(--jet-black), 0 4px 6px -2px var(--jet-black);
+}
+
+.shadow-jet-2 {
+  box-shadow: 0 10px 15px -3px var(--jet-black-2), 0 4px 6px -2px var(--jet-black-2);
+}
+
+.shadow-white {
+  box-shadow: 0 10px 15px -3px var(--white), 0 4px 6px -2px var(--white);
+}
+
+
+
+
 @theme {
   --font-geologica: "Geologica", sans-serif;
 }

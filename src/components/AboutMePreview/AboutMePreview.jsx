@@ -2,29 +2,26 @@ import React from "react";
 
 function AboutMePreview() {
   return (
-    <div className="bg-purple-300 col-span-10 flex flex-col items-center">
-      <h1 className="text-5xl text-center p-8 bg-green-300 w-full">
+    <div className="bg-jet-2 md:m-8 md:h-auto h-[calc(100vh-7rem)] col-span-10 flex flex-col items-center overflow-y-auto">
+      <h1 className="text-5xl text-center p-8 text-rosy w-full">
         {" "}
-        Junior Front-End Developer with Back-End Experience
+        <span className="font-medium block md:hidden text-jet text-3xl mb-4 bg-rosy ">Giovanni Di Pasquale </span>
+        <span className="font-bold">Junior Developer</span>
       </h1>
-      <br />
-      <br />
-      <div className="w-2/3 bg-red-30 p-9 text-xl">
-        <p>
+      <div className="w-[calc(100%) md:w-[calc(100%-12rem) flex flex-col flex-1 justify-around text-white px-9 text-lg ">
+        <p className="border-l-3 p-3 bg-jet shadow-xl ">
           Consistently upgrading my skills in{" "}
           <span className="font-bold">UI/UX</span>,{" "}
           <span className="font-bold">design patterns</span>, and{" "}
           <span className="font-bold">Restful APIs</span> integration. My goal
           is to build <span> <b> neat</b></span>, user-friendly interfaces
         </p>
-        <br />
-        <br />
-        <div className="bg-gray-200">
+        <div className="p-3 bg-rosy text-jet shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            className="size-6 inline-block mb-1"
+            className="size-9 inline-block mb-1"
           >
             <path
               fillRule="evenodd"
@@ -51,37 +48,52 @@ function AboutMePreview() {
             </p>
           </div>
         </div>
-        <br />
-        <br />
-        <div className="text-center bg-gray-800 text-white">
-          <i className="bi bi-github me-2"></i>
-          <span>
-            {" "}
-            Check out my latest Projects on{" "}
+
+        <div className="p-3 bg-rosy text-jet shadow-xl mt-4">
+          <div className="mx-4 font-bold flex flex-col gap-2">
+            <p className="mb-2">
+              <i className="bi bi-envelope-at-fill mr-2"></i>
+              <a className='hover-text-smoky hover:underline' href="mailto:giovanni.francesco97@gmail.com"> giovanni.francesco97@gmail.com</a>
+            </p>
+            <p>
+              <i className="bi bi-phone-fill mr-2"></i>
+              +39 3493360996
+            </p>
+          </div>
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center text-center text-white p-3 gap-5">
+          <div className="col-span-1 p-5 bg-jet shadow-xl">
+
             <a
-              className="hover:underline text-blue-400"
+              className="hover:underline text-rosy hover:text-smoky text-5xl"
               href="https://github.com/giovannifdipasquale"
               target="_blank"
             >
-              {" "}
-              Github{" "}
+              <i className="bi bi-github"></i> my github
             </a>
-          </span>
-        </div>
-        <div className="text-center bg-gray-800 text-white">
-          <p>
-            <i className="fs-5 bi bi-file-earmark-text me-2"></i>
-            <span className="">
-              Download{" "}
-              <a
-                className="hover:underline text-blue-400"
-                href="https://github.com/giovannifdipasquale"
-                target="_blank"
-              >
-                CV{" "}
-              </a>
-            </span>
-          </p>
+          </div>
+
+          <div className="col-span-1 p-5 bg-jet shadow-xl">
+            <a
+              className="hover:underline text-rosy hover:text-smoky text-5xl"
+              href="https://www.linkedin.com/in/giovannifdipasquale"
+              target="_blank"
+            >
+              <i className="bi bi-linkedin"></i> linkedin
+            </a>
+          </div>
+
+          <div className="col-span-1 p-5 bg-jet shadow-xl">
+            <a
+              className="hover:underline text-rosy hover:text-smoky text-5xl"
+              href="https://github.com/giovannifdipasquale"
+              target="_blank"
+            >
+              <i className="bi bi-file-arrow-down-fill"></i> my CV
+            </a>
+          </div>
         </div>
       </div>
     </div>

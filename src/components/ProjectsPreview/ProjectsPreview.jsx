@@ -1,85 +1,141 @@
 import React from 'react'
+import projectsData from 'src/data/projects.json'
 
 function ProjectsPreview() {
   return (
-    <div
-      className={`bg-purple-300 col-span-10 flex flex-col items-center`}
-    >
-      <h1 className="text-5xl text-center p-8 bg-green-300 w-full">
-        Projects
+    <div className="bg-jet-2 md:m-8 md:h-auto h-[calc(100vh-7rem)] col-span-10 flex flex-col items-center overflow-y-auto">
+      <h1 className="text-5xl text-center p-8 text-rosy w-full">
+        <span className="font-bold">Projects</span>
       </h1>
-      <br />
-      <br />
-      <div className="w-2/3 bg-red-300 p-9 text-xl">
-        <div className="text-center bg-gray-800 text-white p-4 mb-8">
+      <div className="w-[calc(100%) md:w-[calc(100%-12rem) flex flex-col flex-1 justify-start text-white text-lg   px-9 ">
+        <div className="text-center bg-jet p-4 mb-8 text-2xl shadow-xl">
           <p>
-            <i className="bi bi-github mr-2"></i>
+            <i className="bi bi-github mr-2 text-rosy"></i>
             <a
               href="https://github.com/giovannifdipasquale"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline text-blue-400"
+              className="hover:underline text-rosy hover:text-smoky"
             >
               github.com/giovannifdipasquale
             </a>
           </p>
         </div>
 
-        <div className="bg-gray-200 p-4 mb-4">
-          <span className="font-bold block mb-4">front-end</span>
-          <div className="mx-4">
-            <p className="mb-2">
-              <i className="bi bi-palette mr-2"></i>
-              <a
-                href="https://github.com/giovannifdipasquale/artstore-frontend"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-blue-700"
-              >
-                Art Store
-              </a>
-            </p>
-            <p>
-              <i className="bi bi-cloud-sun mr-2"></i>
-              <a
-                href="https://github.com/giovannifdipasquale/weather_fetch"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-blue-700"
-              >
-                Weather Fetch
-              </a>
-            </p>
+        <div className="grid grid-cols-12 gap-5">
+          {/* Front-End Category Card */}
+          <div className="col-span-12 md:col-span-6 bg-jet-2 text-white overflow-hidden shadow-xl">
+            <div className="p-3 border-b border-white/10">
+              <span className="font-bold text-rosy block text-center tracking-wider">FRONT-END</span>
+            </div>
+            <div className="divide-y divide-white/5 bg-jet">
+              {projectsData.frontend.map((project, idx) => (
+                <div key={idx} className="p-4 hover:bg-white/5 transition-colors group flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+
+                  {/* Left: Icon & Info */}
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 text-rosy shrink-0">
+                      <i className={`${project.icon} text-lg`}></i>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-white/90 text-lg leading-tight mb-1 text-nowrap">{project.name}</h3>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.tech.map((t, i) => (
+                          <span key={i} className="text-[10px] bg-smoky uppercase font-bold text-gray-400 px-2 py-0.5 border border-white/5">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right: Actions */}
+                  <div className="flex flex-row items-center justify-center gap-2 shrink-0 mt-2 sm:mt-0">
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-rosy hover:bg-rosy/90 flex-1 text-jet text-xs font-bold py-1.5 px-3 transition-transform active:scale-95 flex items-center justify-center gap-1.5"
+                        title="Try it out"
+                      >
+                        <span>Try</span>
+                        <i className="bi bi-box-arrow-up-right"></i>
+                      </a>
+                    )}
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 text-gray-400 hover:text-jet hover:bg-white/10 transition-colors"
+                      title="View Code"
+                    >
+                      <i className="bi bi-github text-xl"></i>
+                    </a>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Back-End Category Card */}
+          <div className="col-span-12 md:col-span-6 bg-jet-2 text-white shadow-xl">
+            <div className="p-3 border-b border-white/10">
+              <span className="font-bold text-rosy block text-center tracking-wider">BACK-END / FULL-STACK</span>
+            </div>
+            <div className="divide-y divide-white/5 bg-jet">
+              {projectsData.backend.map((project, idx) => (
+                <div key={idx} className="p-4 hover:bg-white/5 transition-colors group flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+
+                  {/* Left: Icon & Info */}
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 text-rosy shrink-0">
+                      <i className={`${project.icon} text-lg`}></i>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-white/90 text-lg leading-tight mb-1">{project.name}</h3>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.tech.map((t, i) => (
+                          <span key={i} className="text-[10px] bg-smoky uppercase font-bold text-gray-400 px-2 py-0.5 border border-white/5">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right: Actions */}
+                  <div className="flex lg:flex-row items-center justify-center gap-2 shrink-0 mt-2 sm:mt-0">
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-rosy hover:bg-rosy/90 flex-1 text-jet text-xs font-bold py-1.5 px-3 transition-transform active:scale-95 flex items-center justify-center gap-1.5"
+                        title="Try it out"
+                      >
+                        <span>Try</span>
+                        <i className="bi bi-box-arrow-up-right"></i>
+                      </a>
+                    )}
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 text-gray-400 hover:text-jet hover:bg-white/10 transition-colors"
+                      title="View Code"
+                    >
+                      <i className="bi bi-github text-xl"></i>
+                    </a>
+                  </div>
+
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="bg-gray-200 p-4">
-          <span className="font-bold block mb-4">back-end / full-stack</span>
-          <div className="mx-4">
-            <p className="mb-2">
-              <i className="bi bi-stars mr-2"></i>
-              <a
-                href="https://github.com/giovannifdipasquale/ai-sentiment-analyzer"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-blue-700"
-              >
-                AI Sentiment Analysis
-              </a>
-            </p>
-            <p>
-              <i className="bi bi-cart mr-2"></i>
-              <a
-                href="https://github.com/giovannifdipasquale/presto.it_project"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline text-blue-700"
-              >
-                Presto.it Project
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

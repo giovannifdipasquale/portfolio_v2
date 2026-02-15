@@ -1,0 +1,74 @@
+{
+    "frontend": [
+        {
+            "name": "Supplements DB",
+            "description": "A comprehensive database for tracking and managing dietary supplements.",
+            "tech": [
+                "React",
+                "Tailwind",
+                "Vite"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/supplements-database",
+            "demo": "https://supplements-database.vercel.app/",
+            "icon": "bi bi-capsule"
+        },
+        {
+            "name": "Art Store",
+            "description": "A responsive landing page for selling artworks, featuring interactivity and animations.",
+            "tech": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Bootstrap",
+                "AOS",
+                "Swiper"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/artstore-frontend",
+            "icon": "bi bi-palette"
+        },
+        {
+            "name": "Weather Fetch",
+            "description": "A React app that uses OpenWeatherMap API to fetch and display real-time weather data.",
+            "tech": [
+                "React",
+                "Vite",
+                "OpenWeatherMap API",
+                "Bootstrap"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/weather_fetch",
+            "demo": "https://weather-fetch-demo.vercel.app",
+            "icon": "bi bi-cloud-sun"
+        }
+    ],
+    "backend": [
+        {
+            "name": "AI Sentiment Analysis",
+            "description": "A Laravel-based Sentiment Analysis App developed using Hugging Face API.",
+            "tech": [
+                "PHP",
+                "Laravel",
+                "Blade",
+                "Vite",
+                "Hugging Face API"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/ai-sentiment-analyzer",
+            "demo": "https://ai-sentiment-demo.vercel.app",
+            "icon": "bi bi-stars"
+        },
+        {
+            "name": "Presto.it",
+            "description": "A marketplace platform that allows users to create and manage listings.",
+            "tech": [
+                "PHP",
+                "Laravel",
+                "Blade",
+                "Vite",
+                "MySQL",
+                "Google Vision API"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/presto.it_project",
+            "demo": "https://presto-it-demo.vercel.app",
+            "icon": "bi bi-cart"
+        }
+    ]
+}
