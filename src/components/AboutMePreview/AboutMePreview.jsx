@@ -2,21 +2,22 @@ import React from "react";
 
 function AboutMePreview() {
   return (
-    <div className="bg-jet-2 md:m-8 md:h-auto h-[calc(100vh-7rem)] col-span-10 flex flex-col items-center overflow-y-auto">
+    <div className="md:m-8 md:my-40 m-0 h-[calc(100vh-7rem)] md:h-auto md:col-span-10 flex flex-col items-center overflow-y-auto">
       <h1 className="text-5xl text-center p-8 text-rosy w-full">
         {" "}
         <span className="font-medium block md:hidden text-jet text-3xl mb-4 bg-rosy ">Giovanni Di Pasquale </span>
         <span className="font-bold">Junior Developer</span>
       </h1>
-      <div className="w-[calc(100%) md:w-[calc(100%-12rem) flex flex-col flex-1 justify-around text-white px-9 text-lg ">
-        <p className="border-l-3 p-3 bg-jet shadow-xl ">
+      <div className="w-[calc(100%)] md:w-[calc(100%-12rem) flex flex-col flex-1 justify-around text-white text-lg">
+        <div className="mx-15 break-anywhere border-l-3 px-3 my-5 bg-jet">
           Consistently upgrading my skills in{" "}
           <span className="font-bold">UI/UX</span>,{" "}
           <span className="font-bold">design patterns</span>, and{" "}
           <span className="font-bold">Restful APIs</span> integration. My goal
           is to build <span> <b> neat</b></span>, user-friendly interfaces
-        </p>
-        <div className="p-3 bg-rosy text-jet shadow-xl">
+        </div>
+
+        <div className="mx-15 break-anywhere p-3 bg-rosy text-jet">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -49,52 +50,57 @@ function AboutMePreview() {
           </div>
         </div>
 
-        <div className="p-3 bg-rosy text-jet shadow-xl mt-4">
-          <div className="mx-4 font-bold flex flex-col gap-2">
-            <p className="mb-2">
-              <i className="bi bi-envelope-at-fill mr-2"></i>
-              <a className='hover-text-smoky hover:underline' href="mailto:giovanni.francesco97@gmail.com"> giovanni.francesco97@gmail.com</a>
-            </p>
-            <p>
-              <i className="bi bi-phone-fill mr-2"></i>
-              +39 3493360996
-            </p>
+        <div className="mx-3 md:mx-15 p-3 bg-jet">
+          <p className="font-bold text-rosy text-2xl py-3">
+            Contatti
+          </p>
+          <div className="flex flex-col lg:flex-row justify-between items-start md:items-center gap-4">
+            <div className="font-bold flex flex-col">
+              <p className="mb-2 hover-text-white text-nowrap font-light">
+                <i className="bi bi-envelope-at-fill mr-2"></i>
+                <a className='no-underline' href="mailto:giovanni.francesco97@gmail.com"> giovanni.francesco97@gmail.com</a>
+              </p>
+              <p className="font-light">
+                <i className="bi bi-phone-fill mr-2"></i>
+                +39 3493360996
+              </p>
+            </div>
+            <div className="flex">
+              <div className="text-rosy text-4xl bg-jet py-2 px-6 hover-text-white">
+
+                <a
+                  className=""
+                  href="https://github.com/giovannifdipasquale"
+                  target="_blank"
+                >
+                  <i className="bi bi-github"></i>
+                </a>
+              </div>
+
+              <div className="text-rosy text-4xl bg-jet py-2 px-6 hover-text-white">
+                <a
+                  className=""
+                  href="https://www.linkedin.com/in/giovannifdipasquale"
+                  target="_blank"
+                >
+                  <i className="bi bi-linkedin"></i>
+                </a>
+              </div>
+
+              <div className="text-rosy text-4xl bg-jet py-2 px-6 hover-text-white text-nowrap">
+                <a
+                  className=""
+                  href="https://github.com/giovannifdipasquale"
+                  target="_blank"
+                >
+                  <i className="bi bi-file-arrow-down-fill"></i> CV
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center text-center text-white p-3 gap-5">
-          <div className="col-span-1 p-5 bg-jet shadow-xl">
-
-            <a
-              className="hover:underline text-rosy hover:text-smoky text-5xl"
-              href="https://github.com/giovannifdipasquale"
-              target="_blank"
-            >
-              <i className="bi bi-github"></i> my github
-            </a>
-          </div>
-
-          <div className="col-span-1 p-5 bg-jet shadow-xl">
-            <a
-              className="hover:underline text-rosy hover:text-smoky text-5xl"
-              href="https://www.linkedin.com/in/giovannifdipasquale"
-              target="_blank"
-            >
-              <i className="bi bi-linkedin"></i> linkedin
-            </a>
-          </div>
-
-          <div className="col-span-1 p-5 bg-jet shadow-xl">
-            <a
-              className="hover:underline text-rosy hover:text-smoky text-5xl"
-              href="https://github.com/giovannifdipasquale"
-              target="_blank"
-            >
-              <i className="bi bi-file-arrow-down-fill"></i> my CV
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="h-screen w-screen p-3 font-geologica z-99 bg-jet">
             <div className="border border-white flex flex-col border-solid h-full w-full">
-                <div className='h-25 px-10 py-3 hidden md:block'>
+                <div className='h-25 px-10 py-3 hidden md:block absolute z-99'>
 
 
                     <motion.span
