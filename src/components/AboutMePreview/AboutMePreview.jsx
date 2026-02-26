@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMePreview() {
   return (
-    <div className="md:m-8 md:my-40 m-0 h-[calc(100vh-7rem)] md:h-auto md:col-span-10 flex flex-col items-center overflow-y-auto">
+    <div className="md:m-8 md:mt-20 md:mb-15 m-0 h-[calc(100vh-7rem)] md:h-auto md:col-span-10 flex flex-col items-center overflow-y-auto">
       <h1 className="text-5xl text-center p-8 text-rosy w-full">
         {" "}
         <span className="font-medium block md:hidden text-jet text-3xl mb-4 bg-rosy ">Giovanni Di Pasquale </span>
@@ -10,11 +10,11 @@ function AboutMePreview() {
       </h1>
       <div className="w-[calc(100%)] md:w-[calc(100%-12rem) flex flex-col flex-1 justify-around text-white text-lg">
         <div className="mx-15 break-anywhere border-l-3 px-3 my-5 bg-jet">
-          Consistently upgrading my skills in{" "}
+          Continuously improving my skills in{" "}
           <span className="font-bold">UI/UX</span>,{" "}
           <span className="font-bold">design patterns</span>, and{" "}
           <span className="font-bold">Restful APIs</span> integration. My goal
-          is to build <span> <b> neat</b></span>, user-friendly interfaces
+          is to build <span> <b> functional, cool</b></span> and user-friendly interfaces
         </div>
 
         <div className="mx-15 break-anywhere p-3 bg-rosy text-jet">
@@ -90,7 +90,7 @@ function AboutMePreview() {
               <div className="text-rosy text-4xl bg-jet py-2 px-6 hover-text-white text-nowrap">
                 <a
                   className=""
-                  href="https://github.com/giovannifdipasquale"
+                  href="/cv-IT.pdf"
                   target="_blank"
                 >
                   <i className="bi bi-file-arrow-down-fill"></i> CV

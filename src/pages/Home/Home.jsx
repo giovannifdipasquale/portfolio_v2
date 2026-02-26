@@ -69,7 +69,7 @@ function Home() {
                             }}
                             transition={{
                                 duration: 0.3,
-                                repeat: Infinity,
+                                repeat: 9,
                                 repeatType: "reverse",
                                 repeatDelay: 0.1,
                                 ease: "easeInOut",

@@ -13,62 +13,16 @@
             "icon": "bi bi-capsule"
         },
         {
-            "name": "Art Store",
-            "description": "A responsive landing page for selling artworks, featuring interactivity and animations.",
-            "tech": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Bootstrap",
-                "AOS",
-                "Swiper"
-            ],
-            "repo": "https://github.com/giovannifdipasquale/artstore-frontend",
-            "icon": "bi bi-palette"
-        },
-        {
-            "name": "Weather Fetch",
-            "description": "A React app that uses OpenWeatherMap API to fetch and display real-time weather data.",
+            "name": "Macro & micro tracker",
+            "description": "A React and Tailwind CSS nutrient tracking app featuring real-time food search (USDA Api), portion-based intake logging, and macro/micronutrient dashboard analytics",
             "tech": [
                 "React",
-                "Vite",
-                "OpenWeatherMap API",
-                "Bootstrap"
+                "Tailwind",
+                "Vite"
             ],
-            "repo": "https://github.com/giovannifdipasquale/weather_fetch",
-            "demo": "https://weather-fetch-demo.vercel.app",
-            "icon": "bi bi-cloud-sun"
-        }
-    ],
-    "backend": [
-        {
-            "name": "AI Sentiment Analysis",
-            "description": "A Laravel-based Sentiment Analysis App developed using Hugging Face API.",
-            "tech": [
-                "PHP",
-                "Laravel",
-                "Blade",
-                "Vite",
-                "Hugging Face API"
-            ],
-            "repo": "https://github.com/giovannifdipasquale/ai-sentiment-analyzer",
-            "demo": "https://ai-sentiment-demo.vercel.app",
-            "icon": "bi bi-stars"
-        },
-        {
-            "name": "Presto.it",
-            "description": "A marketplace platform that allows users to create and manage listings.",
-            "tech": [
-                "PHP",
-                "Laravel",
-                "Blade",
-                "Vite",
-                "MySQL",
-                "Google Vision API"
-            ],
-            "repo": "https://github.com/giovannifdipasquale/presto.it_project",
-            "demo": "https://presto-it-demo.vercel.app",
-            "icon": "bi bi-cart"
+            "repo": "https://github.com/giovannifdipasquale/nutrients-tracker",
+            "demo": "https://nutrients-tracker-j4juqcqfx-giovannifdipasquales-projects.vercel.app/",
+            "icon": "bi bi-egg-fried"
         }
     ]
 }

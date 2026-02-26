@@ -24,7 +24,7 @@ function SideBar() {
   return (
     <>
       <div className="hidden md:block font-geologica col-span-2">
-        <div className="m-auto h-full w-4/5 flex flex-col justify-around items-center">
+        <div className="m-auto h-full w-4/5 flex flex-col justify-center items-center gap-y-20">
           {items.map((item) => {
             return (
               <div
