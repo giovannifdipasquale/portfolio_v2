@@ -22,18 +22,15 @@ function ProjectsPreview() {
           </a>
         </p>
       </div>
-      <div className="w-[calc(100%) md:w-[calc(100%-12rem) flex flex-col flex-1 justify-start text-white text-lg px-9 ">
+      <div className="w-[calc(100%) md:w-[calc(100%-12rem) flex flex-col flex-1 justify-center text-white text-lg">
 
 
-        <div className="grid grid-cols-12 gap-5">
+        <div className="grid grid-cols-12">
           {/* Front-End Category Card */}
-          <div className="col-span-12 md:col-span-12 bg-jet-2 text-white overflow-hidden sm:mx-0">
-            <div className="p-3 border-b border-white/10">
-              <span className="font-bold text-rosy block text-center tracking-wider">FRONT-END</span>
-            </div>
-            <div className="divide-y divide-white/5 bg-jet">
+          <div className="col-span-12 md:col-span-12 bg-jet-2 text-white overflow-hidden sm:mx-0 shadow-2xl">
+            <div className="divide-y divide-white/5 bg-jet ">
               {projectsData.frontend.map((project, idx) => (
-                <div key={idx} className="p-4 bg-jet hover:bg-white/5 transition-colors group flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div key={idx} className="border border-white/5 shadow-xl p-4 px-8 bg-jet hover:bg-white/5 transition-colors group flex flex-col lg:flex-row lg:items-center justify-between gap-4">
 
                   {/* Left: Icon & Info */}
                   <div className="flex items-start gap-3">
@@ -62,7 +59,7 @@ function ProjectsPreview() {
                         className="bg-rosy hover:bg-rosy/90 flex-1 text-jet text-xs font-bold py-1.5 px-3 transition-transform active:scale-95 flex items-center justify-center gap-1.5"
                         title="Try it out"
                       >
-                        <span>Try</span>
+                        <span>Vercel</span>
                         <i className="bi bi-box-arrow-up-right"></i>
                       </a>
                     )}

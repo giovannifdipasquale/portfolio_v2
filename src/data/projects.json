@@ -1,6 +1,18 @@
 {
     "frontend": [
         {
+            "name": "OPC UA Dashboard Simul",
+            "description": "React Dashboard that handles simulated industrial data from a Prosys OPC UA public demo server. It subscribes to demonstrative data and processes it to be transmitted to a React frontend via WebSockets",
+            "tech": [
+                "Node-RED",
+                "React",
+                "Tailwind",
+                "Vite"
+            ],
+            "repo": "https://github.com/giovannifdipasquale/opcua-dashboard-simul",
+            "icon": "bi bi-bar-chart-line-fill"
+        },
+        {
             "name": "Supplements DB",
             "description": "A comprehensive database for tracking and managing dietary supplements.",
             "tech": [
