@@ -67,7 +67,7 @@ function ProjectsPreview() {
                       href={project.repo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-1.5 text-gray-400 hover:text-jet hover:bg-white/10 transition-colors"
+                      className="p-1.5 text-gray-400 hover:text-jet inline-block border border-white/10   hover:bg-white/10 transition-colors"
                       title="View Code"
                     >
                       <i className="bi bi-github text-xl"></i>
