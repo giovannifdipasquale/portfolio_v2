@@ -25,15 +25,15 @@
             "icon": "bi bi-capsule"
         },
         {
-            "name": "Macro & micro tracker",
-            "description": "A React and Tailwind CSS nutrient tracking app featuring real-time food search (USDA Api), portion-based intake logging, and macro/micronutrient dashboard analytics",
+            "name": "Nutrients Tracker",
+            "description": "Full-stack nutrient tracker (micro and macro) app built with React and Tailwind. Features real-time food search (USDA API), secure user authentication, and persistent CRUD operations using Supabase (PostgreSQL). Integrates the Google Studio API to dynamically generate structured JSON meal recommendations based on the user's remaining daily macronutrients",
             "tech": [
                 "React",
                 "Tailwind",
                 "Vite"
             ],
             "repo": "https://github.com/giovannifdipasquale/nutrients-tracker",
-            "demo": "https://nutrients-tracker-j4juqcqfx-giovannifdipasquales-projects.vercel.app/",
+            "demo": "https://nutrients-tracker.vercel.app/",
             "icon": "bi bi-egg-fried"
         }
     ]
