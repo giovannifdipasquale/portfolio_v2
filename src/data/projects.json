@@ -1,16 +1,16 @@
 {
     "frontend": [
         {
-            "name": "OPC UA Dashboard Simul",
-            "description": "React Dashboard that handles simulated industrial data from a Prosys OPC UA public demo server. It subscribes to demonstrative data and processes it to be transmitted to a React frontend via WebSockets",
+            "name": "Nutrients Tracker",
+            "description": "Full-stack nutrient tracker (micro and macro) app built with React and Tailwind. Features real-time food search (USDA API), secure user authentication, and persistent CRUD operations using Supabase (PostgreSQL). Integrates the Google Studio API to dynamically generate structured JSON meal recommendations based on the user's remaining daily macronutrients",
             "tech": [
-                "Node-RED",
                 "React",
                 "Tailwind",
                 "Vite"
             ],
-            "repo": "https://github.com/giovannifdipasquale/opcua-dashboard-simul",
-            "icon": "bi bi-bar-chart-line-fill"
+            "repo": "https://github.com/giovannifdipasquale/nutrients-tracker",
+            "demo": "https://nutrients-tracker.vercel.app/",
+            "icon": "bi bi-egg-fried"
         },
         {
             "name": "Supplements DB",
@@ -25,16 +25,16 @@
             "icon": "bi bi-capsule"
         },
         {
-            "name": "Nutrients Tracker",
-            "description": "Full-stack nutrient tracker (micro and macro) app built with React and Tailwind. Features real-time food search (USDA API), secure user authentication, and persistent CRUD operations using Supabase (PostgreSQL). Integrates the Google Studio API to dynamically generate structured JSON meal recommendations based on the user's remaining daily macronutrients",
+            "name": "OPC UA Dashboard Simul",
+            "description": "React Dashboard that handles simulated industrial data from a Prosys OPC UA public demo server. It subscribes to demonstrative data and processes it to be transmitted to a React frontend via WebSockets",
             "tech": [
+                "Node-RED",
                 "React",
                 "Tailwind",
                 "Vite"
             ],
-            "repo": "https://github.com/giovannifdipasquale/nutrients-tracker",
-            "demo": "https://nutrients-tracker.vercel.app/",
-            "icon": "bi bi-egg-fried"
+            "repo": "https://github.com/giovannifdipasquale/opcua-dashboard-simul",
+            "icon": "bi bi-bar-chart-line-fill"
         }
     ]
 }
