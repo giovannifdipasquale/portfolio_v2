@@ -6,7 +6,9 @@
             "tech": [
                 "React",
                 "Tailwind",
-                "Vite"
+                "Vite",
+                "Supabase",
+                "Google AI Studio"
             ],
             "repo": "https://github.com/giovannifdipasquale/nutrients-tracker",
             "demo": "https://nutrients-tracker.vercel.app/",
