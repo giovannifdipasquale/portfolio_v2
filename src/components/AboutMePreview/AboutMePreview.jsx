@@ -6,7 +6,7 @@ function AboutMePreview() {
       <h1 className="text-5xl text-center p-8 text-rosy w-full">
         {" "}
         <span className="font-medium block md:hidden text-jet text-3xl mb-4 bg-rosy ">Giovanni Di Pasquale </span>
-        <span className="font-bold">Junior Developer</span>
+        <span className="font-bold">Junior Web Developer</span>
       </h1>
       <div className="w-[calc(100%)] md:w-[calc(100%-12rem) flex flex-col flex-1 justify-around text-white text-lg">
         <div className="mx-15 break-anywhere border-l-3 px-3 my-5 bg-jet">
